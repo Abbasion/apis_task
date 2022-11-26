@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "bd6046a3-9662-4808-8a21-8cb8fb613ed0",
+		"name": "task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15607683"
+	},
+	"item": [
+		{
+			"name": "stock",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/stock/",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"stock",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insider",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/insider/apl",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"insider",
+						"apl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "valuation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/valuation/apl",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"valuation",
+						"apl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "valuation Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"stock\": false,\r\n    \"name\": \"posttest\",\r\n    \"price\":123,\r\n    \"change\":44,\r\n    \"symbol\":1,\r\n    \"cost\":\"1.2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/post/",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"post",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
